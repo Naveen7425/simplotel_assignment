@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    color: Black;
+}
+
+#toggle:checked~.unordered-list {
+    display: flex;
+}
+
+input {
+    display: none;
+}
+
+.navbar {
+    background-color: #ff7070;
+    color: Black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+
+}
+
+.main {
+    background-color: #ffffff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.unordered-list {
+    display: flex;
+    gap: 30px;
+    color: Black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-container {
+    background-image: linear-gradient(to right, #fff4af, #ffadf5);
+    margin-bottom: 15px;
+}
+
+.img1 {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.description-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #ff7070;
+    color: #ffffff;
+    border: 0;
+    height: 30px;
+    width: 150px;
+    font-family: "Roboto";
+    font-size: 12px;
+    align-self: flex-start;
+    margin-top: 20px;
+
+}
+
+.two-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.second-bg-container {
+    background-image: linear-gradient(to right, #fff4af, #ffadf5);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.sub-img {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+}
+
+.three-images {
+    display: flex;
+}
+
+.img-3 {
+    flex-grow: grow;
+    width: 120px;
+    margin: 5px;
+}
+
+.text-card {
+    background-color: #ff7070;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    padding: 20px;
+    margin-left: 30px;
+}
+
+.description-heading {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: "Roboto";
+    font-weight: 120px;
+}
+
+.arrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.text-card-para {
+    margin-right: 10px;
+    font-family: "Roboto";
+}
+
+.h4 {
+    margin-bottom: 20px;
+}
+
+.h1 {
+    margin-bottom: 20px;
+}
+
+.description-para {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 50px;
+}
+
+
+.arrow-icon {
+    margin-top: 2px;
+}
+
+@media(max-width:576px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    .unordered-list {
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .description-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .img1 {
+        order: -1;
+        width: 100%;
+    }
+
+    .second-bg-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-card {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .text-card-para {
+        margin-right: 10px;
+        font-family: "Roboto";
+        font-size: 10px;
+    }
+
+    .h4 {
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .arrow-icon {
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .sub-img {
+        width: 150px;
+    }
+
+    .img-3 {
+        width: 150px;
+    }
+
+}
+
+@media(min-width:578px) and (max-width:991px) {
+    li {
+        font-size: 15px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    unordered-list {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .h1 {
+        font-size: 15px !important;
+    }
+}
+
+@media(max-width:768px) {
+    .h4 {
+        font-size: 10px;
+    }
+
+    .h1 {
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media(min-width:992px) and (max-width:1200px) {
+    .unordered-list {
+        display: flex;
+        gap: 50px;
+        color: Black;
+    }
+
+    .card-des {
+        padding: 60px;
+    }
+
+    .second-bg-container {
+        padding: 60px;
+    }
+
+    .h4 {
+        font-size: 12px;
+    }
+
+    .two-images {
+        width: 50%;
+    }
+
+    .h1 {
+        font-size: 20px;
+    }
+
+    .sub-img {
+        width: 160px;
+        margin: 10px;
+    }
+
+    .img-3 {
+        width: 175px;
+        margin: 10px;
+    }
+
+    .three-images {
+        min-width: 45%;
+    }
+
+    .text-card {
+        height: 155px;
+    }
+
+    @media(min-width:1200px) {
+        .sub-img {
+            height: 200px;
+            width: 200px;
+        }
+
+
+        .card-des {
+            padding: 60px;
+        }
+
+        .second-bg-container {
+            padding: 60px;
+        }
+
+        .text-card {
+            height: 200px;
+            width: 40%;
+            margin: 20px;
+        }
+
+        .sub-img {
+            width: 160px;
+            margin: 10px;
+        }
+
+        .img-3 {
+            width: 175px;
+            margin: 10px;
+        }
+
+        .three-images {
+            min-width: 45%;
+        }
+
+        .text-card {
+            height: 155px;
+
+        }
+
+        .h4 {
+            font-size: 12px;
+        }
+
+        .navbar {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .unordered-list {
+            display: flex;
+            gap: 50px;
+            color: Black;
+        }
+
+        li {
+            font-size: 24px;
+            font-family: "Roboto";
+        }
+
+    }
+
+    @media(max-width:576px) {
+        .description-heading {
+            font-size: 20px;
+        }
+
+        .description-para {
+            font-size: 15px;
+        }
+
+        .sub-img {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+
+        .img-3 {
+            width: 100px;
+        }
+
+        .h4 {
+            font-size: 10px;
+        }
+
+        .h1 {
+            font-size: 20px;
+        }
+
+        .text-card {
+            width: 100%;
+        }
+
+    }
+}
